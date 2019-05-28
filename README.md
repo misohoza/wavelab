@@ -1,6 +1,6 @@
-### Wavelab
+# Wavelab
 
-# Type definition for Visual Studio Code
+## Type definition for Visual Studio Code
 
 How to use:
 
