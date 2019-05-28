@@ -8,4 +8,4 @@ How to use:
 
   (Folder containing your wavelab scripts)
 
-![vscode](https://i.imgur.com/x51nFO9.png)
+![vscode](https://i.imgur.com/cQMstwl.png)
