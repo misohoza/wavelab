@@ -2,7 +2,7 @@
 
 ### Type definitions for Wavelab
 
-Provides tooltips and auto-complete suggestions for Wavelab specific functions.
+Provides tooltips and auto-complete suggestions for Wavelab specific functions in Visual Studio Code.
 
 How to use:
 
