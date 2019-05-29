@@ -1,6 +1,6 @@
-# Type definitions for Wavelab
+# Type definitions for WaveLab
 
-Provides tooltips and auto-complete suggestions for Wavelab specific functions in [Visual Studio Code](https://code.visualstudio.com/).
+Provides tooltips and auto-complete suggestions for WaveLab scripting language in [Visual Studio Code](https://code.visualstudio.com/).
 
 How to use:
 
