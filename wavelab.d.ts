@@ -1,4 +1,4 @@
-// Type definitions for Wavelab Scripting
+// Type definitions for WaveLab Scripting
 
 // Classes
 interface Application {
