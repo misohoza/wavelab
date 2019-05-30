@@ -43,7 +43,7 @@ interface AudioObject {
    * * `correctionStart`
    * * `correctionEnd`
    */
-  addMarker(type: any, name: string, comment: string): void;
+  addMarker(type: number, name: string, comment: string): void;
   /**
    * Loads the audio range Preset and applies its setting to the audio object.
    */
@@ -76,7 +76,7 @@ interface AudioObject {
    * * `correctionStart`
    * * `correctionEnd`
    */
-  findNextMarkerPosition(searchStartPos: number, type: any): number;
+  findNextMarkerPosition(searchStartPos: number, type: number): number;
   /**
    * This function renders the audio object with the currently active Preset.
    * *outputFileName* is the path name to the output file.
@@ -187,7 +187,7 @@ interface Montage extends AudioObject {
    * 
    * This function returns the ID of first created clip, or 0.
    */
-  insertClip(indexTrack: number, where: number, fileName: string, rippleMode: any): number;
+  insertClip(indexTrack: number, where: number, fileName: string, rippleMode: number): number;
   /**
    * Adds a mono audio track at a given track index.
    */
@@ -282,7 +282,7 @@ interface Wave extends AudioObject {
    * * `exp`
    * * `expp`
    */
-  fadeIn(shape: any): void;
+  fadeIn(shape: number): void;
   /**
    * Applies a fade-out to the selected audio range.
    * 
@@ -296,7 +296,7 @@ interface Wave extends AudioObject {
    * * `exp`
    * * `expp`
    */
-  fadeOut(shape: any): void;
+  fadeOut(shape: number): void;
   /**
    * Inverts the phase of the samples in the audio range.
    */
@@ -379,7 +379,7 @@ interface Wave extends AudioObject {
    * * `rightCh`
    * * `allCh`
    */
-  setCursorChannel(channel: any): void;
+  setCursorChannel(channel: number): void;
   /**
    * Loads a silence Preset and applies its settings.
    */
@@ -409,7 +409,7 @@ interface Workspace {
   /**
    * Activate the tab of the file identified by *fileId*.
    */
-  activateFile(fileId: object): void;
+  activateFile(fileId: any): void;
   /**
    * Closes all files in the active file group.
    */
@@ -417,17 +417,17 @@ interface Workspace {
   /**
    * Closes the file identified by *fileId*.
    */
-  closeFile(fileId: object): void;
+  closeFile(fileId: any): void;
   /**
    * Opens in the Workspace the Montage with the file name *fileName*.
    * Returns a *fileId* that can be used with `activateFile`(*fileId*) and `closeFile`(*fileId*)
    */
-  openMontage(fileName: string): object;
+  openMontage(fileName: string): any;
   /**
    * Opens in the Workspace the Wave with the file name *fileName*.
    * Returns a *fileId* that can be used with `activateFile`(*fileId*) and `closeFile`(*fileId*)
    */
-  openWave(fileName: string): object;
+  openWave(fileName: string): any;
 }
 
 // Global Objects
