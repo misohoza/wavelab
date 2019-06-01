@@ -260,7 +260,7 @@ interface Wave extends AudioObject {
   /**
    * Changes the level of the selected audio range.
    */
-  changeLevel(decibeValue: number): void;
+  changeLevel(decibelValue: number): void;
   /**
    * Copies the selected audio range to the clipboard.
    */
